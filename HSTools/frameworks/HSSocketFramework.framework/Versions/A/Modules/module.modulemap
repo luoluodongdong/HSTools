@@ -1,0 +1,6 @@
+framework module HSSocketFramework {
+  umbrella header "HSSocketFramework.h"
+
+  export *
+  module * { export * }
+}

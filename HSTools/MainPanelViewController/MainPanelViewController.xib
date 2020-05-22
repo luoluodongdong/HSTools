@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MainPanelViewController">
+            <connections>
+                <outlet property="gridView" destination="MLW-Bg-nnG" id="Sig-If-Tz5"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4g6-8T-Lj8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="415"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="mkX-1F-ria">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="415"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view id="MLW-Bg-nnG" customClass="CNGridView">
+                                <rect key="frame" x="0.0" y="0.0" width="585" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="-2" id="FOC-5M-xNP"/>
+                                    <outlet property="delegate" destination="-2" id="cWl-g0-Tiz"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="placeholderTextColor" catalog="System" colorSpace="catalog"/>
+                    </clipView>
+                    <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="lqI-1Y-GEX">
+                        <rect key="frame" x="-100" y="-100" width="600" height="16"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Cx9-3y-rKf">
+                        <rect key="frame" x="584" y="0.0" width="16" height="415"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bVC-Ii-oet">
+                    <rect key="frame" x="18" y="423" width="241" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="237" id="RR0-3K-Jzb"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Tools list:" id="kWA-Yf-4x0">
+                        <font key="font" metaFont="systemUltraLight" size="27"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4g6-8T-Lj8" secondAttribute="trailing" id="2yl-M3-zZp"/>
+                <constraint firstItem="bVC-Ii-oet" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="27" id="YtO-M6-lkp"/>
+                <constraint firstItem="4g6-8T-Lj8" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="ZPb-rD-aLx"/>
+                <constraint firstItem="4g6-8T-Lj8" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="65" id="dbc-M1-ok0"/>
+                <constraint firstItem="bVC-Ii-oet" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="hCh-fj-ICr"/>
+                <constraint firstItem="4g6-8T-Lj8" firstAttribute="top" secondItem="bVC-Ii-oet" secondAttribute="bottom" constant="8" symbolic="YES" id="hyK-hs-yhh"/>
+                <constraint firstAttribute="bottom" secondItem="4g6-8T-Lj8" secondAttribute="bottom" id="sbW-TB-9hO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </customView>
+    </objects>
+</document>

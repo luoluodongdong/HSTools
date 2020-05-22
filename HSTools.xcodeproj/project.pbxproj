@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D8600D02472669800690B88 /* SerialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600CE2472669800690B88 /* SerialViewController.m */; };
+		9D8600D12472669800690B88 /* SerialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8600CF2472669800690B88 /* SerialViewController.xib */; };
+		9D8600D32472703E00690B88 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8600D22472703E00690B88 /* ORSSerial.framework */; };
+		9D8600E32472A51300690B88 /* ZMQPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600E12472A51300690B88 /* ZMQPublishViewController.m */; };
+		9D8600E42472A51300690B88 /* ZMQPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8600E22472A51300690B88 /* ZMQPublishViewController.xib */; };
+		9D8600E82472A6E000690B88 /* ZMQSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600E62472A6E000690B88 /* ZMQSubscribeViewController.m */; };
+		9D8600E92472A6E000690B88 /* ZMQSubscribeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8600E72472A6E000690B88 /* ZMQSubscribeViewController.xib */; };
+		9D8600EB2472B15900690B88 /* ZMQlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8600EA2472B15900690B88 /* ZMQlib.framework */; };
+		9D8600EC2472B15900690B88 /* ZMQlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8600EA2472B15900690B88 /* ZMQlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D8600F1247380B100690B88 /* ZMQRPCClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600EF247380B100690B88 /* ZMQRPCClientViewController.m */; };
+		9D8600F2247380B100690B88 /* ZMQRPCClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8600F0247380B100690B88 /* ZMQRPCClientViewController.xib */; };
+		9D8600F62473AF6000690B88 /* ZMQRPCServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600F42473AF6000690B88 /* ZMQRPCServerViewController.m */; };
+		9D8600F72473AF6000690B88 /* ZMQRPCServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8600F52473AF6000690B88 /* ZMQRPCServerViewController.xib */; };
+		9D8600FB2473B48700690B88 /* ServerReplyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8600FA2473B48700690B88 /* ServerReplyItem.m */; };
+		9D86014D2473F19900690B88 /* AboutWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D8601462473F19900690B88 /* AboutWindowController.xib */; };
+		9D86014E2473F19900690B88 /* AboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8601472473F19900690B88 /* AboutWindowController.m */; };
+		9D86014F2473F19900690B88 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D86014A2473F19900690B88 /* ContentViewController.xib */; };
+		9D8601502473F19900690B88 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D86014B2473F19900690B88 /* ContentViewController.m */; };
+		9DF77E91246F8A520023A228 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77E90246F8A520023A228 /* AppDelegate.m */; };
+		9DF77E93246F8A520023A228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77E92246F8A520023A228 /* Assets.xcassets */; };
+		9DF77E96246F8A520023A228 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77E94246F8A520023A228 /* MainMenu.xib */; };
+		9DF77E99246F8A520023A228 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77E98246F8A520023A228 /* main.m */; };
+		9DF77EA7246F8AE30023A228 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EA1246F8AE20023A228 /* ContainerViewController.m */; };
+		9DF77EA8246F8AE30023A228 /* ContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EA2246F8AE20023A228 /* ContainerViewController.xib */; };
+		9DF77EA9246F8AE30023A228 /* ConvertTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EA5246F8AE20023A228 /* ConvertTool.m */; };
+		9DF77EBE246F8AF00023A228 /* MyRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EAB246F8AF00023A228 /* MyRegex.m */; };
+		9DF77EBF246F8AF00023A228 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EAF246F8AF00023A228 /* ServerViewController.m */; };
+		9DF77EC0246F8AF00023A228 /* ServerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EB0246F8AF00023A228 /* ServerViewController.xib */; };
+		9DF77EC1246F8AF00023A228 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EB3246F8AF00023A228 /* ClientViewController.m */; };
+		9DF77EC2246F8AF00023A228 /* ClientViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EB4246F8AF00023A228 /* ClientViewController.xib */; };
+		9DF77EC3246F8AF00023A228 /* MainPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EBA246F8AF00023A228 /* MainPanelViewController.xib */; };
+		9DF77EC4246F8AF00023A228 /* MainPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EBB246F8AF00023A228 /* MainPanelViewController.m */; };
+		9DF77EC7246F8B4C0023A228 /* HSSocketFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF77EC6246F8B4C0023A228 /* HSSocketFramework.framework */; };
+		9DF77ED5246F8C740023A228 /* CNGridViewItemLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EC9246F8C740023A228 /* CNGridViewItemLayout.m */; };
+		9DF77ED6246F8C740023A228 /* NSView+CNGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77ECD246F8C740023A228 /* NSView+CNGridView.m */; };
+		9DF77ED7246F8C740023A228 /* CNGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77ECF246F8C740023A228 /* CNGridView.m */; };
+		9DF77ED8246F8C740023A228 /* NSColor+CNGridViewPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77ED0246F8C740023A228 /* NSColor+CNGridViewPalette.m */; };
+		9DF77ED9246F8C740023A228 /* CNGridViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77ED1246F8C740023A228 /* CNGridViewItem.m */; };
+		9DF77EDB246F8D960023A228 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF77EDA246F8D960023A228 /* QuartzCore.framework */; };
+		9DF77EE3246F8F770023A228 /* BackgroundNoisy.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EDD246F8F770023A228 /* BackgroundNoisy.png */; };
+		9DF77EE4246F8F770023A228 /* BackgroundSolid.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EDE246F8F770023A228 /* BackgroundSolid.png */; };
+		9DF77EE5246F8F770023A228 /* AppleLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EDF246F8F770023A228 /* AppleLogo.png */; };
+		9DF77EE6246F8F770023A228 /* socketclient.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EE0246F8F770023A228 /* socketclient.png */; };
+		9DF77EE7246F8F770023A228 /* socketserver.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EE1246F8F770023A228 /* socketserver.png */; };
+		9DF77EE8246F8F770023A228 /* BackgroundDust.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EE2246F8F770023A228 /* BackgroundDust.png */; };
+		9DF77EEA246F93570023A228 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EE9246F93560023A228 /* appicon.png */; };
+		9DF77EF1246FBA390023A228 /* zmqrpcserver.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EEB246FBA390023A228 /* zmqrpcserver.png */; };
+		9DF77EF2246FBA390023A228 /* sfcquery.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EEC246FBA390023A228 /* sfcquery.png */; };
+		9DF77EF3246FBA390023A228 /* zmqpulish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EED246FBA390023A228 /* zmqpulish.png */; };
+		9DF77EF4246FBA390023A228 /* serialport.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EEE246FBA390023A228 /* serialport.png */; };
+		9DF77EF5246FBA390023A228 /* zmqrpcclient.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EEF246FBA390023A228 /* zmqrpcclient.png */; };
+		9DF77EF6246FBA390023A228 /* zmqsubscribe.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EF0246FBA390023A228 /* zmqsubscribe.png */; };
+		9DF77EFB246FBC050023A228 /* SFCQueryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF77EF9246FBC050023A228 /* SFCQueryViewController.m */; };
+		9DF77EFC246FBC050023A228 /* SFCQueryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF77EFA246FBC050023A228 /* SFCQueryViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D8600ED2472B15900690B88 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D8600EC2472B15900690B88 /* ZMQlib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9D8600CD2472669800690B88 /* SerialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SerialViewController.h; sourceTree = "<group>"; };
+		9D8600CE2472669800690B88 /* SerialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SerialViewController.m; sourceTree = "<group>"; };
+		9D8600CF2472669800690B88 /* SerialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerialViewController.xib; sourceTree = "<group>"; };
+		9D8600D22472703E00690B88 /* ORSSerial.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ORSSerial.framework; path = HSTools/frameworks/ORSSerial.framework; sourceTree = "<group>"; };
+		9D8600E02472A51300690B88 /* ZMQPublishViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQPublishViewController.h; sourceTree = "<group>"; };
+		9D8600E12472A51300690B88 /* ZMQPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQPublishViewController.m; sourceTree = "<group>"; };
+		9D8600E22472A51300690B88 /* ZMQPublishViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMQPublishViewController.xib; sourceTree = "<group>"; };
+		9D8600E52472A6E000690B88 /* ZMQSubscribeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQSubscribeViewController.h; sourceTree = "<group>"; };
+		9D8600E62472A6E000690B88 /* ZMQSubscribeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQSubscribeViewController.m; sourceTree = "<group>"; };
+		9D8600E72472A6E000690B88 /* ZMQSubscribeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMQSubscribeViewController.xib; sourceTree = "<group>"; };
+		9D8600EA2472B15900690B88 /* ZMQlib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZMQlib.framework; path = HSTools/frameworks/ZMQlib.framework; sourceTree = "<group>"; };
+		9D8600EE247380B100690B88 /* ZMQRPCClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQRPCClientViewController.h; sourceTree = "<group>"; };
+		9D8600EF247380B100690B88 /* ZMQRPCClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQRPCClientViewController.m; sourceTree = "<group>"; };
+		9D8600F0247380B100690B88 /* ZMQRPCClientViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMQRPCClientViewController.xib; sourceTree = "<group>"; };
+		9D8600F32473AF6000690B88 /* ZMQRPCServerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMQRPCServerViewController.h; sourceTree = "<group>"; };
+		9D8600F42473AF6000690B88 /* ZMQRPCServerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMQRPCServerViewController.m; sourceTree = "<group>"; };
+		9D8600F52473AF6000690B88 /* ZMQRPCServerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZMQRPCServerViewController.xib; sourceTree = "<group>"; };
+		9D8600F92473B48700690B88 /* ServerReplyItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerReplyItem.h; sourceTree = "<group>"; };
+		9D8600FA2473B48700690B88 /* ServerReplyItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerReplyItem.m; sourceTree = "<group>"; };
+		9D8601462473F19900690B88 /* AboutWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindowController.xib; sourceTree = "<group>"; };
+		9D8601472473F19900690B88 /* AboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutWindowController.m; sourceTree = "<group>"; };
+		9D8601492473F19900690B88 /* ContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		9D86014A2473F19900690B88 /* ContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
+		9D86014B2473F19900690B88 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		9D86014C2473F19900690B88 /* AboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutWindowController.h; sourceTree = "<group>"; };
+		9DF77E8C246F8A520023A228 /* HSTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DF77E8F246F8A520023A228 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DF77E90246F8A520023A228 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DF77E92246F8A520023A228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DF77E95246F8A520023A228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9DF77E97246F8A520023A228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF77E98246F8A520023A228 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DF77E9A246F8A520023A228 /* HSTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HSTools.entitlements; sourceTree = "<group>"; };
+		9DF77EA1246F8AE20023A228 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerViewController.m; sourceTree = "<group>"; };
+		9DF77EA2246F8AE20023A228 /* ContainerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContainerViewController.xib; sourceTree = "<group>"; };
+		9DF77EA3246F8AE20023A228 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerViewController.h; sourceTree = "<group>"; };
+		9DF77EA5246F8AE20023A228 /* ConvertTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertTool.m; sourceTree = "<group>"; };
+		9DF77EA6246F8AE20023A228 /* ConvertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertTool.h; sourceTree = "<group>"; };
+		9DF77EAB246F8AF00023A228 /* MyRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRegex.m; sourceTree = "<group>"; };
+		9DF77EAC246F8AF00023A228 /* MyRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRegex.h; sourceTree = "<group>"; };
+		9DF77EAF246F8AF00023A228 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		9DF77EB0246F8AF00023A228 /* ServerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerViewController.xib; sourceTree = "<group>"; };
+		9DF77EB1246F8AF00023A228 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		9DF77EB3246F8AF00023A228 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		9DF77EB4246F8AF00023A228 /* ClientViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClientViewController.xib; sourceTree = "<group>"; };
+		9DF77EB5246F8AF00023A228 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
+		9DF77EB7246F8AF00023A228 /* SubViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubViewControllerProtocol.h; sourceTree = "<group>"; };
+		9DF77EB9246F8AF00023A228 /* MainPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPanelViewController.h; sourceTree = "<group>"; };
+		9DF77EBA246F8AF00023A228 /* MainPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPanelViewController.xib; sourceTree = "<group>"; };
+		9DF77EBB246F8AF00023A228 /* MainPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPanelViewController.m; sourceTree = "<group>"; };
+		9DF77EBD246F8AF00023A228 /* PublicDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicDefines.h; sourceTree = "<group>"; };
+		9DF77EC6246F8B4C0023A228 /* HSSocketFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSSocketFramework.framework; path = HSTools/frameworks/HSSocketFramework.framework; sourceTree = "<group>"; };
+		9DF77EC9246F8C740023A228 /* CNGridViewItemLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNGridViewItemLayout.m; sourceTree = "<group>"; };
+		9DF77ECA246F8C740023A228 /* CNGridViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNGridViewItem.h; sourceTree = "<group>"; };
+		9DF77ECB246F8C740023A228 /* NSColor+CNGridViewPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CNGridViewPalette.h"; sourceTree = "<group>"; };
+		9DF77ECC246F8C740023A228 /* CNGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNGridViewDelegate.h; sourceTree = "<group>"; };
+		9DF77ECD246F8C740023A228 /* NSView+CNGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSView+CNGridView.m"; sourceTree = "<group>"; };
+		9DF77ECE246F8C740023A228 /* CNGridViewDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNGridViewDefinitions.h; sourceTree = "<group>"; };
+		9DF77ECF246F8C740023A228 /* CNGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNGridView.m; sourceTree = "<group>"; };
+		9DF77ED0246F8C740023A228 /* NSColor+CNGridViewPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CNGridViewPalette.m"; sourceTree = "<group>"; };
+		9DF77ED1246F8C740023A228 /* CNGridViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CNGridViewItem.m; sourceTree = "<group>"; };
+		9DF77ED2246F8C740023A228 /* CNGridViewItemLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNGridViewItemLayout.h; sourceTree = "<group>"; };
+		9DF77ED3246F8C740023A228 /* NSView+CNGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSView+CNGridView.h"; sourceTree = "<group>"; };
+		9DF77ED4246F8C740023A228 /* CNGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNGridView.h; sourceTree = "<group>"; };
+		9DF77EDA246F8D960023A228 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9DF77EDD246F8F770023A228 /* BackgroundNoisy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundNoisy.png; sourceTree = "<group>"; };
+		9DF77EDE246F8F770023A228 /* BackgroundSolid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundSolid.png; sourceTree = "<group>"; };
+		9DF77EDF246F8F770023A228 /* AppleLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppleLogo.png; sourceTree = "<group>"; };
+		9DF77EE0246F8F770023A228 /* socketclient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socketclient.png; sourceTree = "<group>"; };
+		9DF77EE1246F8F770023A228 /* socketserver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socketserver.png; sourceTree = "<group>"; };
+		9DF77EE2246F8F770023A228 /* BackgroundDust.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackgroundDust.png; sourceTree = "<group>"; };
+		9DF77EE9246F93560023A228 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		9DF77EEB246FBA390023A228 /* zmqrpcserver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zmqrpcserver.png; sourceTree = "<group>"; };
+		9DF77EEC246FBA390023A228 /* sfcquery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sfcquery.png; sourceTree = "<group>"; };
+		9DF77EED246FBA390023A228 /* zmqpulish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zmqpulish.png; sourceTree = "<group>"; };
+		9DF77EEE246FBA390023A228 /* serialport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serialport.png; sourceTree = "<group>"; };
+		9DF77EEF246FBA390023A228 /* zmqrpcclient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zmqrpcclient.png; sourceTree = "<group>"; };
+		9DF77EF0246FBA390023A228 /* zmqsubscribe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zmqsubscribe.png; sourceTree = "<group>"; };
+		9DF77EF8246FBC050023A228 /* SFCQueryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFCQueryViewController.h; sourceTree = "<group>"; };
+		9DF77EF9246FBC050023A228 /* SFCQueryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCQueryViewController.m; sourceTree = "<group>"; };
+		9DF77EFA246FBC050023A228 /* SFCQueryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFCQueryViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DF77E89246F8A520023A228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8600D32472703E00690B88 /* ORSSerial.framework in Frameworks */,
+				9DF77EDB246F8D960023A228 /* QuartzCore.framework in Frameworks */,
+				9DF77EC7246F8B4C0023A228 /* HSSocketFramework.framework in Frameworks */,
+				9D8600EB2472B15900690B88 /* ZMQlib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D8600CC2472667900690B88 /* SerialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600CD2472669800690B88 /* SerialViewController.h */,
+				9D8600CE2472669800690B88 /* SerialViewController.m */,
+				9D8600CF2472669800690B88 /* SerialViewController.xib */,
+			);
+			path = SerialViewController;
+			sourceTree = "<group>";
+		};
+		9D8600D62472A35300690B88 /* ZMQViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600DF2472A46400690B88 /* rpcServer */,
+				9D8600DE2472A45A00690B88 /* rpcClient */,
+				9D8600DD2472A44100690B88 /* subscriber */,
+				9D8600DC2472A43500690B88 /* publisher */,
+			);
+			path = ZMQViewController;
+			sourceTree = "<group>";
+		};
+		9D8600DC2472A43500690B88 /* publisher */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600E02472A51300690B88 /* ZMQPublishViewController.h */,
+				9D8600E12472A51300690B88 /* ZMQPublishViewController.m */,
+				9D8600E22472A51300690B88 /* ZMQPublishViewController.xib */,
+			);
+			path = publisher;
+			sourceTree = "<group>";
+		};
+		9D8600DD2472A44100690B88 /* subscriber */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600E52472A6E000690B88 /* ZMQSubscribeViewController.h */,
+				9D8600E62472A6E000690B88 /* ZMQSubscribeViewController.m */,
+				9D8600E72472A6E000690B88 /* ZMQSubscribeViewController.xib */,
+			);
+			path = subscriber;
+			sourceTree = "<group>";
+		};
+		9D8600DE2472A45A00690B88 /* rpcClient */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600EE247380B100690B88 /* ZMQRPCClientViewController.h */,
+				9D8600EF247380B100690B88 /* ZMQRPCClientViewController.m */,
+				9D8600F0247380B100690B88 /* ZMQRPCClientViewController.xib */,
+			);
+			path = rpcClient;
+			sourceTree = "<group>";
+		};
+		9D8600DF2472A46400690B88 /* rpcServer */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600F82473B45900690B88 /* ServerReplyItem */,
+				9D8600F32473AF6000690B88 /* ZMQRPCServerViewController.h */,
+				9D8600F42473AF6000690B88 /* ZMQRPCServerViewController.m */,
+				9D8600F52473AF6000690B88 /* ZMQRPCServerViewController.xib */,
+			);
+			path = rpcServer;
+			sourceTree = "<group>";
+		};
+		9D8600F82473B45900690B88 /* ServerReplyItem */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600F92473B48700690B88 /* ServerReplyItem.h */,
+				9D8600FA2473B48700690B88 /* ServerReplyItem.m */,
+			);
+			path = ServerReplyItem;
+			sourceTree = "<group>";
+		};
+		9D8601452473F19900690B88 /* AboutWindowController */ = {
+			isa = PBXGroup;
+			children = (
+				9D86014C2473F19900690B88 /* AboutWindowController.h */,
+				9D8601472473F19900690B88 /* AboutWindowController.m */,
+				9D8601462473F19900690B88 /* AboutWindowController.xib */,
+				9D8601482473F19900690B88 /* ContentViewController */,
+			);
+			path = AboutWindowController;
+			sourceTree = "<group>";
+		};
+		9D8601482473F19900690B88 /* ContentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9D8601492473F19900690B88 /* ContentViewController.h */,
+				9D86014B2473F19900690B88 /* ContentViewController.m */,
+				9D86014A2473F19900690B88 /* ContentViewController.xib */,
+			);
+			path = ContentViewController;
+			sourceTree = "<group>";
+		};
+		9DF77E83246F8A520023A228 = {
+			isa = PBXGroup;
+			children = (
+				9DF77E8E246F8A520023A228 /* HSTools */,
+				9DF77E8D246F8A520023A228 /* Products */,
+				9DF77EC5246F8B4C0023A228 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9DF77E8D246F8A520023A228 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77E8C246F8A520023A228 /* HSTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DF77E8E246F8A520023A228 /* HSTools */ = {
+			isa = PBXGroup;
+			children = (
+				9D8601452473F19900690B88 /* AboutWindowController */,
+				9D8600D62472A35300690B88 /* ZMQViewController */,
+				9D8600CC2472667900690B88 /* SerialViewController */,
+				9DF77EF7246FBBDF0023A228 /* SFCQueryViewController */,
+				9DF77EDC246F8F770023A228 /* SourcesFiles */,
+				9DF77EC8246F8C740023A228 /* CNGridView */,
+				9DF77EB8246F8AF00023A228 /* MainPanelViewController */,
+				9DF77EAA246F8AF00023A228 /* MyRegexp */,
+				9DF77EBC246F8AF00023A228 /* PublicDefines */,
+				9DF77EB6246F8AF00023A228 /* SubViewControllerProtocol */,
+				9DF77EAD246F8AF00023A228 /* TCPSocket */,
+				9DF77EA0246F8AE20023A228 /* ContainerViewController */,
+				9DF77EA4246F8AE20023A228 /* ConvertTool */,
+				9DF77E8F246F8A520023A228 /* AppDelegate.h */,
+				9DF77E90246F8A520023A228 /* AppDelegate.m */,
+				9DF77E92246F8A520023A228 /* Assets.xcassets */,
+				9DF77E94246F8A520023A228 /* MainMenu.xib */,
+				9DF77E97246F8A520023A228 /* Info.plist */,
+				9DF77E98246F8A520023A228 /* main.m */,
+				9DF77E9A246F8A520023A228 /* HSTools.entitlements */,
+			);
+			path = HSTools;
+			sourceTree = "<group>";
+		};
+		9DF77EA0246F8AE20023A228 /* ContainerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EA1246F8AE20023A228 /* ContainerViewController.m */,
+				9DF77EA2246F8AE20023A228 /* ContainerViewController.xib */,
+				9DF77EA3246F8AE20023A228 /* ContainerViewController.h */,
+			);
+			path = ContainerViewController;
+			sourceTree = "<group>";
+		};
+		9DF77EA4246F8AE20023A228 /* ConvertTool */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EA5246F8AE20023A228 /* ConvertTool.m */,
+				9DF77EA6246F8AE20023A228 /* ConvertTool.h */,
+			);
+			path = ConvertTool;
+			sourceTree = "<group>";
+		};
+		9DF77EAA246F8AF00023A228 /* MyRegexp */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EAB246F8AF00023A228 /* MyRegex.m */,
+				9DF77EAC246F8AF00023A228 /* MyRegex.h */,
+			);
+			path = MyRegexp;
+			sourceTree = "<group>";
+		};
+		9DF77EAD246F8AF00023A228 /* TCPSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EAE246F8AF00023A228 /* ServerViewController */,
+				9DF77EB2246F8AF00023A228 /* ClientViewController */,
+			);
+			path = TCPSocket;
+			sourceTree = "<group>";
+		};
+		9DF77EAE246F8AF00023A228 /* ServerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EAF246F8AF00023A228 /* ServerViewController.m */,
+				9DF77EB0246F8AF00023A228 /* ServerViewController.xib */,
+				9DF77EB1246F8AF00023A228 /* ServerViewController.h */,
+			);
+			path = ServerViewController;
+			sourceTree = "<group>";
+		};
+		9DF77EB2246F8AF00023A228 /* ClientViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EB5246F8AF00023A228 /* ClientViewController.h */,
+				9DF77EB3246F8AF00023A228 /* ClientViewController.m */,
+				9DF77EB4246F8AF00023A228 /* ClientViewController.xib */,
+			);
+			path = ClientViewController;
+			sourceTree = "<group>";
+		};
+		9DF77EB6246F8AF00023A228 /* SubViewControllerProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EB7246F8AF00023A228 /* SubViewControllerProtocol.h */,
+			);
+			path = SubViewControllerProtocol;
+			sourceTree = "<group>";
+		};
+		9DF77EB8246F8AF00023A228 /* MainPanelViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EB9246F8AF00023A228 /* MainPanelViewController.h */,
+				9DF77EBB246F8AF00023A228 /* MainPanelViewController.m */,
+				9DF77EBA246F8AF00023A228 /* MainPanelViewController.xib */,
+			);
+			path = MainPanelViewController;
+			sourceTree = "<group>";
+		};
+		9DF77EBC246F8AF00023A228 /* PublicDefines */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EBD246F8AF00023A228 /* PublicDefines.h */,
+			);
+			path = PublicDefines;
+			sourceTree = "<group>";
+		};
+		9DF77EC5246F8B4C0023A228 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D8600EA2472B15900690B88 /* ZMQlib.framework */,
+				9D8600D22472703E00690B88 /* ORSSerial.framework */,
+				9DF77EDA246F8D960023A228 /* QuartzCore.framework */,
+				9DF77EC6246F8B4C0023A228 /* HSSocketFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DF77EC8246F8C740023A228 /* CNGridView */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EC9246F8C740023A228 /* CNGridViewItemLayout.m */,
+				9DF77ECA246F8C740023A228 /* CNGridViewItem.h */,
+				9DF77ECB246F8C740023A228 /* NSColor+CNGridViewPalette.h */,
+				9DF77ECC246F8C740023A228 /* CNGridViewDelegate.h */,
+				9DF77ECD246F8C740023A228 /* NSView+CNGridView.m */,
+				9DF77ECE246F8C740023A228 /* CNGridViewDefinitions.h */,
+				9DF77ECF246F8C740023A228 /* CNGridView.m */,
+				9DF77ED0246F8C740023A228 /* NSColor+CNGridViewPalette.m */,
+				9DF77ED1246F8C740023A228 /* CNGridViewItem.m */,
+				9DF77ED2246F8C740023A228 /* CNGridViewItemLayout.h */,
+				9DF77ED3246F8C740023A228 /* NSView+CNGridView.h */,
+				9DF77ED4246F8C740023A228 /* CNGridView.h */,
+			);
+			path = CNGridView;
+			sourceTree = "<group>";
+		};
+		9DF77EDC246F8F770023A228 /* SourcesFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EEE246FBA390023A228 /* serialport.png */,
+				9DF77EEC246FBA390023A228 /* sfcquery.png */,
+				9DF77EED246FBA390023A228 /* zmqpulish.png */,
+				9DF77EEF246FBA390023A228 /* zmqrpcclient.png */,
+				9DF77EEB246FBA390023A228 /* zmqrpcserver.png */,
+				9DF77EF0246FBA390023A228 /* zmqsubscribe.png */,
+				9DF77EE9246F93560023A228 /* appicon.png */,
+				9DF77EDD246F8F770023A228 /* BackgroundNoisy.png */,
+				9DF77EDE246F8F770023A228 /* BackgroundSolid.png */,
+				9DF77EDF246F8F770023A228 /* AppleLogo.png */,
+				9DF77EE0246F8F770023A228 /* socketclient.png */,
+				9DF77EE1246F8F770023A228 /* socketserver.png */,
+				9DF77EE2246F8F770023A228 /* BackgroundDust.png */,
+			);
+			path = SourcesFiles;
+			sourceTree = "<group>";
+		};
+		9DF77EF7246FBBDF0023A228 /* SFCQueryViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9DF77EF8246FBC050023A228 /* SFCQueryViewController.h */,
+				9DF77EF9246FBC050023A228 /* SFCQueryViewController.m */,
+				9DF77EFA246FBC050023A228 /* SFCQueryViewController.xib */,
+			);
+			path = SFCQueryViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DF77E8B246F8A520023A228 /* HSTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DF77E9D246F8A520023A228 /* Build configuration list for PBXNativeTarget "HSTools" */;
+			buildPhases = (
+				9DF77E88246F8A520023A228 /* Sources */,
+				9DF77E89246F8A520023A228 /* Frameworks */,
+				9DF77E8A246F8A520023A228 /* Resources */,
+				9D8600ED2472B15900690B88 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSTools;
+			productName = HSTools;
+			productReference = 9DF77E8C246F8A520023A228 /* HSTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DF77E84246F8A520023A228 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = WeidongCao;
+				TargetAttributes = {
+					9DF77E8B246F8A520023A228 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 9DF77E87246F8A520023A228 /* Build configuration list for PBXProject "HSTools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DF77E83246F8A520023A228;
+			productRefGroup = 9DF77E8D246F8A520023A228 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DF77E8B246F8A520023A228 /* HSTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DF77E8A246F8A520023A228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF77EC2246F8AF00023A228 /* ClientViewController.xib in Resources */,
+				9D8600E92472A6E000690B88 /* ZMQSubscribeViewController.xib in Resources */,
+				9D86014F2473F19900690B88 /* ContentViewController.xib in Resources */,
+				9DF77EEA246F93570023A228 /* appicon.png in Resources */,
+				9D8600D12472669800690B88 /* SerialViewController.xib in Resources */,
+				9DF77EE5246F8F770023A228 /* AppleLogo.png in Resources */,
+				9DF77EE4246F8F770023A228 /* BackgroundSolid.png in Resources */,
+				9DF77EE7246F8F770023A228 /* socketserver.png in Resources */,
+				9DF77E93246F8A520023A228 /* Assets.xcassets in Resources */,
+				9DF77EE8246F8F770023A228 /* BackgroundDust.png in Resources */,
+				9DF77EC3246F8AF00023A228 /* MainPanelViewController.xib in Resources */,
+				9D8600F2247380B100690B88 /* ZMQRPCClientViewController.xib in Resources */,
+				9DF77EFC246FBC050023A228 /* SFCQueryViewController.xib in Resources */,
+				9D8600E42472A51300690B88 /* ZMQPublishViewController.xib in Resources */,
+				9DF77EF4246FBA390023A228 /* serialport.png in Resources */,
+				9DF77E96246F8A520023A228 /* MainMenu.xib in Resources */,
+				9D86014D2473F19900690B88 /* AboutWindowController.xib in Resources */,
+				9DF77EE3246F8F770023A228 /* BackgroundNoisy.png in Resources */,
+				9DF77EF5246FBA390023A228 /* zmqrpcclient.png in Resources */,
+				9D8600F72473AF6000690B88 /* ZMQRPCServerViewController.xib in Resources */,
+				9DF77EA8246F8AE30023A228 /* ContainerViewController.xib in Resources */,
+				9DF77EC0246F8AF00023A228 /* ServerViewController.xib in Resources */,
+				9DF77EF6246FBA390023A228 /* zmqsubscribe.png in Resources */,
+				9DF77EE6246F8F770023A228 /* socketclient.png in Resources */,
+				9DF77EF3246FBA390023A228 /* zmqpulish.png in Resources */,
+				9DF77EF1246FBA390023A228 /* zmqrpcserver.png in Resources */,
+				9DF77EF2246FBA390023A228 /* sfcquery.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DF77E88246F8A520023A228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D8600F1247380B100690B88 /* ZMQRPCClientViewController.m in Sources */,
+				9DF77ED9246F8C740023A228 /* CNGridViewItem.m in Sources */,
+				9D8600E82472A6E000690B88 /* ZMQSubscribeViewController.m in Sources */,
+				9DF77EC4246F8AF00023A228 /* MainPanelViewController.m in Sources */,
+				9DF77ED6246F8C740023A228 /* NSView+CNGridView.m in Sources */,
+				9DF77E99246F8A520023A228 /* main.m in Sources */,
+				9D8600FB2473B48700690B88 /* ServerReplyItem.m in Sources */,
+				9D8600F62473AF6000690B88 /* ZMQRPCServerViewController.m in Sources */,
+				9DF77ED7246F8C740023A228 /* CNGridView.m in Sources */,
+				9DF77E91246F8A520023A228 /* AppDelegate.m in Sources */,
+				9DF77ED5246F8C740023A228 /* CNGridViewItemLayout.m in Sources */,
+				9D8600D02472669800690B88 /* SerialViewController.m in Sources */,
+				9D8601502473F19900690B88 /* ContentViewController.m in Sources */,
+				9DF77EA7246F8AE30023A228 /* ContainerViewController.m in Sources */,
+				9DF77EFB246FBC050023A228 /* SFCQueryViewController.m in Sources */,
+				9D86014E2473F19900690B88 /* AboutWindowController.m in Sources */,
+				9DF77EBF246F8AF00023A228 /* ServerViewController.m in Sources */,
+				9DF77EA9246F8AE30023A228 /* ConvertTool.m in Sources */,
+				9DF77EC1246F8AF00023A228 /* ClientViewController.m in Sources */,
+				9D8600E32472A51300690B88 /* ZMQPublishViewController.m in Sources */,
+				9DF77ED8246F8C740023A228 /* NSColor+CNGridViewPalette.m in Sources */,
+				9DF77EBE246F8AF00023A228 /* MyRegex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DF77E94246F8A520023A228 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DF77E95246F8A520023A228 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DF77E9B246F8A520023A228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9DF77E9C246F8A520023A228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9DF77E9E246F8A520023A228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HSTools/HSTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HSTools/frameworks",
+				);
+				INFOPLIST_FILE = HSTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = weidong.HSTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DF77E9F246F8A520023A228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = HSTools/HSTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HSTools/frameworks",
+				);
+				INFOPLIST_FILE = HSTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = weidong.HSTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DF77E87246F8A520023A228 /* Build configuration list for PBXProject "HSTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF77E9B246F8A520023A228 /* Debug */,
+				9DF77E9C246F8A520023A228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DF77E9D246F8A520023A228 /* Build configuration list for PBXNativeTarget "HSTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DF77E9E246F8A520023A228 /* Debug */,
+				9DF77E9F246F8A520023A228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DF77E84246F8A520023A228 /* Project object */;
+}
